@@ -1,0 +1,9 @@
+---
+- hosts: backup-pi
+  become: yes
+
+  vars_files:
+    - config.yml
+
+  roles:
+    - pi-os.hdparm
